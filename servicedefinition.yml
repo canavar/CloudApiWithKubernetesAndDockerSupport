@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: cloudapi-service
+  namespace: mustaers-cloudapi
+  labels:
+    app: cloudapi
+spec:
+  selector:
+    app: cloudapi
+  ports:
+    - port: 80 # Default port for image : 5678
