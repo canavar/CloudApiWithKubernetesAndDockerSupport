@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cloudapi-deployment
+  labels:
+    app: cloudapi
+spec:
+  containers:
+  - name: cloudapi
+    image: my_repo/mustaers_cloudapi:latest
